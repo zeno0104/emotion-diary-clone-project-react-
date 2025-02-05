@@ -32,7 +32,7 @@ export const Home = () => {
   const [pivotDate, setPivotDate] = useState(new Date());
 
   const monthlyData = getMonthlyData(pivotDate, data);
-  console.log(monthlyData);
+  // console.log(monthlyData);
   const onIncreaseMonth = () => {
     setPivotDate(new Date(pivotDate.getFullYear(), pivotDate.getMonth() + 1));
   };

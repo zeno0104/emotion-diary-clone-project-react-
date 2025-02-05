@@ -4,6 +4,7 @@ import { DiaryItem } from "./DiaryItem";
 import "./DiaryList.css";
 import { useNavigate } from "react-router-dom";
 
+// eslint-disable-next-line react/prop-types
 export const DiaryList = ({ data }) => {
   const nav = useNavigate();
   const [sortType, setSortType] = useState("latest");
@@ -14,6 +15,7 @@ export const DiaryList = ({ data }) => {
 
   const getSortedDate = () => {
     // toSorted(): 원본 배열은 냅두고 정렬된 새로운 배열을 반환한다.
+    // eslint-disable-next-line react/prop-types
     return data.toSorted((a, b) => {
       if (sortType === "oldest") {
         return a.createdDate - b.createdDate;

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { getEmotionImage } from "../util/get-emotion-img";
 import "./Viewer.css";
 import { emotionList } from "../util/constants";

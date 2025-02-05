@@ -6,12 +6,14 @@ import { useNavigate } from "react-router-dom";
 import { emotionList } from "../util/constants";
 import { getStringedDate } from "../util/get-stringed-date";
 
+// eslint-disable-next-line react/prop-types
 export const Editor = ({ initData, onSubmit }) => {
   const nav = useNavigate();
   useEffect(() => {
     if (initData) {
       setInput({
         ...initData,
+        // eslint-disable-next-line react/prop-types
         createdDate: new Date(Number(initData.createdDate)),
       });
     }
